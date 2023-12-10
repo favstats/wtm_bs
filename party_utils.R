@@ -137,7 +137,7 @@ if(sets$cntry %in% country_codes & nrow(thedat)!=0){
     filter(is.na(no_data)) %>% 
     drop_na(party) %>% 
     filter(party %in% color_dat$party) %>% 
-    filter(sources != "tep")
+    filter(sources == "wtm")
   
   
   
@@ -146,7 +146,7 @@ if(sets$cntry %in% country_codes & nrow(thedat)!=0){
     filter(is.na(no_data)) %>% 
     drop_na(party) %>% 
     filter(party %in% color_dat$party) %>% 
-    filter(sources != "tep")
+    filter(sources == "wtm")
 
 }
 
